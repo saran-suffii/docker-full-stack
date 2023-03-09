@@ -4,7 +4,7 @@ LABEL "Project"="Vprofile"
 LABEL "Author"="saran"
 
 
-ENV MYSQL_ROOT_PASSWORD="VPRODBPASS"
+ENV MYSQL_ROOT_PASSWORD="vprodbpass"
 ENV MYSQL_BATABASE="accounts"
 
-ADD db_backup.sql docker-entrypoint-init.d/db_backup.sql
+ADD db_backup.sql docker-entrypoint-initdb.d/db_backup.sql
